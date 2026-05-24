@@ -2,7 +2,7 @@
 A Python and Power BI project that identifies and quantifies GST filing discrepancies between a company's purchase register and the government's GSTR-2A data.
 
 ## Problem Statement
-In India, businesses claim Input Tax Credit (ITC) ased on GST Invoices files by their vendors.
+In India, businesses claim Input Tax Credit (ITC) based on GST Invoices files by their vendors.
 When vendors file incorrect, incomplete, or missing invoices in the government's GSTR-2A, businesses lose their rightful tax credits - directly impacting their bottom line.
 
 Manual reconciliation of hundreds of invoices is time-consuming and error-prone.
@@ -14,9 +14,9 @@ This project automates the detection and quantification of three types of GST di
 ## What This Project Does
 - Simulates a realistic Purchase Register (500 invoices) with Indian vendor data using Python and Faker.
 - Simulates a GSTR-2A dataset with intentional errors - missing invoices (15%), amount mismatches (10%), and GST rate mismatches (8%).
-- Runs automated reconciliation logic to detect and categorizeall discrepancies.
+- Runs automated reconciliation logic to detect and categorize all discrepancies.
 - Quantifies financial impact - total tax credit lost, GST at risk from amount mismatches, GST at risk from rate mismatches.
-- Visualizes findings in an interactive Power BI dashboard with slicers for issue type, data range, and vendor.
+- Visualizes findings in an interactive Power BI dashboard with slicers for issue type, date range, and vendor.
 
 ## Tech Stack
 | Tool | Purpose |
@@ -51,7 +51,7 @@ gst-reconciliation-tool/
 - **₹3.01M** in total tax credit lost due to missing vendor invoices.
 - **Missing Invoices** are the most common issue - accounting for 52% of all discrepancies.
 - **July** recorded the highest spike in reconciliation issues across all categories.
-- **GST Amount Mismathes** put ₹62.65K at risk due to incorrect taxable amounts files by vendors.
+- **GST Amount Mismatches** put ₹62.65K at risk due to incorrect taxable amounts filed by vendors.
 - **GST Rate Mismatches** resulted in ₹968.81K at risk due to wrong GST slabs applied.
 
 ## How To Run
