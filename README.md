@@ -28,32 +28,24 @@ This project automates the detection and quantification of three types of GST di
 | Power BI | Interactive dashboard and visualization |
 
 ## Project Structure
+```
 gst-reconciliation-tool/
-|
-|--data/
-|  |--raw/           #Simulated input data
-|  |  |--purchase_register.csv
-|  |  |__
-|  |     gstr_2a.csv
-|  |__
-|     processed/     #Reconciliation output
-|  |--missing_invoices.csv
-|  |--amount_mismatch.csv
-|  |__
-|     gst_rate_mismatch.csv
-|
-|
-|--scripts/
-|  |--simulate_data.py    #Generates synthetic GST data
-|  |__
-|     reconciliation_dashboard  #Reconciliation logic
-|
-|--dashboard/
-|  |--gst_reconciliation_dashboard.pbix
-|
-|
-|--.gitignore
-|--README.md
+├── data/
+│   ├── raw/
+│   │   ├── purchase_register.csv
+│   │   └── gstr_2a.csv
+│   └── processed/
+│       ├── missing_invoices.csv
+│       ├── amount_mismatch.csv
+│       └── gst_rate_mismatch.csv
+├── scripts/
+│   ├── simulate_data.py
+│   └── reconciliation.py
+├── dashboard/
+│   └── gst_reconciliation_dashboard.pbix
+├── .gitignore
+└── README.md
+```
 
 ## Key Insights From The Dashboard
 - **₹3.01M** in total tax credit lost due to missing vendor invoices.
@@ -65,12 +57,22 @@ gst-reconciliation-tool/
 ## How To Run
 
 ### Step 1 - Install dependencies
+```
+pip install pandas numpy faker
+```
 
 ### Step 2 - Simulate the data
+```
+cd scripts
+python simulate_data.py
+```
 
 This generates 'purchase_register.csv' and 'gstr_2a.csv' in 'data/raw/'
 
 ### Step 3 - Run Reconciliation
+```
+python reconciliation.py
+```
 
 This generates three output files in 'data/processed/'
 
