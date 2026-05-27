@@ -54,6 +54,14 @@ gst-reconciliation-tool/
 - **GST Amount Mismatches** put ₹62.65K at risk due to incorrect taxable amounts filed by vendors.
 - **GST Rate Mismatches** resulted in ₹968.81K at risk due to wrong GST slabs applied.
 
+## Dashboard Preview
+
+![GST Reconciliation Dashboard](Screenshot%202026-05-23%20195116.png)
+
+## Reconciliation Script
+
+![Python Reconciliation Logic](Screenshot%202026-05-25%20021832.png)
+
 ## How To Run
 
 ### Step 1 - Install dependencies
